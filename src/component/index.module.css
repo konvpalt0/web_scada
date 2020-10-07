@@ -1,0 +1,74 @@
+* {
+  background-color: #e3e8ee;
+}
+
+.body {
+  font: 14px "ArialMT", sans-serif;
+  margin: 100px 280px 0px 280px;
+  display: grid;
+  box-sizing: border-box;
+  grid-template: repeat(4, 1fr)/1fr;
+}
+.body .header {
+  align-self: end;
+}
+.body .list ul {
+  padding-left: 2rem;
+  list-style-image: url("../assets/Capture.PNG");
+}
+.body .list:nth-child(2) ul li:first-child {
+  text-decoration: line-through;
+}
+.body .list:nth-child(2) ul li:nth-child(2) {
+  font-weight: bold;
+}
+.body .list:nth-child(2) ul li:nth-child(3) {
+  font-style: italic;
+}
+.body .list:nth-child(2) ul li:last-child {
+  text-transform: uppercase;
+}
+.body .list:nth-child(3) ul li:nth-child(2):hover {
+  color: red;
+}
+.body .list:nth-child(3) ul li:nth-child(2):hover {
+  list-style-image: url("../assets/CaptureRed.PNG");
+}
+.body .buttons {
+  display: grid;
+  grid-template: 1fr/repeat(3, 3fr);
+  justify-content: space-between;
+}
+.body .buttons button {
+  background-color: #72a3a5;
+  color: whitesmoke;
+  box-shadow: 0 0 10px #72a3a5;
+  margin: 1rem;
+  width: 10rem;
+  height: 2rem;
+  border: 0px;
+  outline: none;
+  border-radius: 1.2rem;
+  align-self: center;
+}
+.body .buttons button:hover {
+  background-color: #354f51;
+  box-shadow: 0 0 10px #354f51;
+}
+.body .buttons button:active {
+  background-color: #787778;
+  box-shadow: 0 0 10px #787778;
+}
+.body .inputs {
+  display: grid;
+  grid-template: 1fr/repeat(2, 1fr);
+}
+.body .inputs input {
+  justify-self: start;
+  min-height: 2rem;
+}
+.body .inputs input:focus {
+  box-shadow: 0 0 10px #72a3a5;
+}
+
+/*# sourceMappingURL=index.module.css.map */
